@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -L \"https://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.4/jbcrypt-0.4.jar\" -o \"c:/Users/risha/OneDrive/Desktop/Projects/BankingManagementSystem/lib/jbcrypt-0.4.jar\")"
+    ]
+  }
+}

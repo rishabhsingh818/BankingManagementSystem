@@ -38,7 +38,7 @@ public class BankingApp {
                         break;
                     case 2:
                         email = user.login();
-                        if(email!=null){
+                        if(email != null){
                             System.out.println();
                             System.out.println("User Logged In!");
                             if(!accounts.account_exist(email)){
@@ -52,7 +52,6 @@ public class BankingApp {
                                 }else{
                                     break;
                                 }
-
                             }
                             account_number = accounts.getAccount_number(email);
                             int choice2 = 0;
@@ -85,11 +84,10 @@ public class BankingApp {
                                         break;
                                 }
                             }
-
-                        }
-                        else{
+                        } else {
                             System.out.println("Incorrect Email or Password!");
                         }
+                        break;
                     case 3:
                         System.out.println("THANK YOU FOR USING BANKING SYSTEM!!!");
                         System.out.println("Exiting System!");

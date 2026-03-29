@@ -16,8 +16,10 @@ A console-based Banking Management System built with Java and MySQL that provide
    - Place the JAR file in the `lib/` folder of this project
 
 3. **Configure Database Credentials**
-   - Open `BankingApp.java`
-   - Update the database username and password with your MySQL credentials
+   - Configure DB credentials via environment variables (recommended):
+     - `BANK_DB_URL` (default: `jdbc:mysql://127.0.0.1:3306/banking_system`)
+     - `BANK_DB_USERNAME` (default: `root`)
+     - `BANK_DB_PASSWORD` (default: empty)
 
 4. **Compile the Project**
    ```bash
@@ -114,11 +116,16 @@ BankingManagementSystem/
 
 ## Configuration
 
-Update database credentials in [BankingApp.java](BankingApp.java):
-```java
-private static final String url = "jdbc:mysql://127.0.0.1:3306/banking_system";
-private static final String username = "root";
-private static final String password = "YOUR_PASSWORD";
+Configure database credentials using environment variables (recommended):
+- `BANK_DB_URL` (default: `jdbc:mysql://127.0.0.1:3306/banking_system`)
+- `BANK_DB_USERNAME` (default: `root`)
+- `BANK_DB_PASSWORD` (default: empty)
+
+Example (PowerShell):
+```powershell
+$env:BANK_DB_URL = "jdbc:mysql://127.0.0.1:3306/banking_system"
+$env:BANK_DB_USERNAME = "root"
+$env:BANK_DB_PASSWORD = "YOUR_PASSWORD"
 ```
 
 ## Compilation and Execution
